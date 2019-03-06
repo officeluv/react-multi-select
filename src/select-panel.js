@@ -23,7 +23,8 @@ type Props = {
     disableSearch?: boolean,
     hasSelectAll: boolean,
     filterOptions?: (options: Array<Option>, filter: string) => Array<Option>,
-    overrideStrings?: {[string]: string}
+    overrideStrings?: {[string]: string},
+    onSearchChange?: (input: string) => void
 };
 
 type State = {
@@ -65,6 +66,7 @@ class SelectPanel extends Component<Props, State> {
             searchText: e.target.value,
             focusIndex: -1,
         });
+        this.props.onSearchChange && this.props.onSearchChange(e.target.value);
     }
 
     handleItemClicked = (index: number) => {

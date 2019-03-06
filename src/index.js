@@ -38,7 +38,8 @@ type Props = {
     shouldToggleOnHover: boolean,
     hasSelectAll: boolean,
     filterOptions?: (options: Array<Option>, filter: string) => Array<Option>,
-    overrideStrings?: {[string]: string}
+    overrideStrings?: {[string]: string},
+    onSearchChange?: (input: string) => void
 };
 
 class MultiSelect extends Component<Props> {
@@ -114,6 +115,7 @@ class MultiSelect extends Component<Props> {
             shouldToggleOnHover,
             hasSelectAll,
             overrideStrings,
+            onSearchChange,
         } = this.props;
 
         return <div className="multi-select">
@@ -132,6 +134,7 @@ class MultiSelect extends Component<Props> {
                     disableSearch,
                     filterOptions,
                     overrideStrings,
+                    onSearchChange,
                 }}
                 disabled={disabled}
             >

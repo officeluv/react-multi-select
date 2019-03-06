@@ -768,6 +768,7 @@ var SelectPanel = function (_Component) {
                 searchText: e.target.value,
                 focusIndex: -1
             });
+            _this.props.onSearchChange && _this.props.onSearchChange(e.target.value);
         }, _this.handleItemClicked = function (index) {
             _this.setState({ focusIndex: index });
         }, _this.clearSearch = function () {
@@ -1096,7 +1097,8 @@ var MultiSelect = function (_Component) {
                 filterOptions = _props3.filterOptions,
                 shouldToggleOnHover = _props3.shouldToggleOnHover,
                 hasSelectAll = _props3.hasSelectAll,
-                overrideStrings = _props3.overrideStrings;
+                overrideStrings = _props3.overrideStrings,
+                onSearchChange = _props3.onSearchChange;
 
 
             return _react2.default.createElement(
@@ -1118,7 +1120,8 @@ var MultiSelect = function (_Component) {
                             disabled: disabled,
                             disableSearch: disableSearch,
                             filterOptions: filterOptions,
-                            overrideStrings: overrideStrings
+                            overrideStrings: overrideStrings,
+                            onSearchChange: onSearchChange
                         },
                         disabled: disabled
                     },

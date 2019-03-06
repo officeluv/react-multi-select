@@ -84,6 +84,7 @@ var SelectPanel = function (_Component) {
                 searchText: e.target.value,
                 focusIndex: -1
             });
+            _this.props.onSearchChange && _this.props.onSearchChange(e.target.value);
         }, _this.handleItemClicked = function (index) {
             _this.setState({ focusIndex: index });
         }, _this.clearSearch = function () {

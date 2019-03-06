@@ -146,7 +146,8 @@ var MultiSelect = function (_Component) {
                 filterOptions = _props3.filterOptions,
                 shouldToggleOnHover = _props3.shouldToggleOnHover,
                 hasSelectAll = _props3.hasSelectAll,
-                overrideStrings = _props3.overrideStrings;
+                overrideStrings = _props3.overrideStrings,
+                onSearchChange = _props3.onSearchChange;
 
 
             return _react2.default.createElement(
@@ -168,7 +169,8 @@ var MultiSelect = function (_Component) {
                             disabled: disabled,
                             disableSearch: disableSearch,
                             filterOptions: filterOptions,
-                            overrideStrings: overrideStrings
+                            overrideStrings: overrideStrings,
+                            onSearchChange: onSearchChange
                         },
                         disabled: disabled
                     },

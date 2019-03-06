@@ -1,10 +1,10 @@
 {
-  "name": "@khanacademy/react-multi-select",
+  "name": "@officeluv/react-multi-select",
   "version": "0.3.2",
-  "description": "React Multi Select Component",
+  "description": "React Multi Select Component from Officeluv",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khan/react-multi-select"
+    "url": "https://github.com/officeluv/react-multi-select"
   },
   "license": "MIT",
   "scripts": {

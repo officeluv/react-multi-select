@@ -157,7 +157,7 @@ class SelectPanel extends Component<Props, State> {
             className="select-panel"
             style={styles.panel}
             role="listbox"
-            onKeyDown={this.handleKeyDown}
+            // onKeyDown={this.handleKeyDown}
         >
             {!disableSearch && <div style={styles.searchContainer}>
                 <input

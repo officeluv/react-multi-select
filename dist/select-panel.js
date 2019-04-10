@@ -183,8 +183,8 @@ var SelectPanel = function (_Component) {
                 {
                     className: 'select-panel',
                     style: styles.panel,
-                    role: 'listbox',
-                    onKeyDown: this.handleKeyDown
+                    role: 'listbox'
+                    // onKeyDown={this.handleKeyDown}
                 },
                 !disableSearch && _react2.default.createElement(
                     'div',
